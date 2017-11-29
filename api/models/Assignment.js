@@ -23,8 +23,10 @@ module.exports = {
       type: 'integer',
     },
 
-    grade_id: {
+    grade: {
       type: 'integer',
+      model: 'grade',
+      columnName: 'grade_id'
     },
 
     class_id: {

@@ -15,8 +15,10 @@ module.exports = {
       autoIncrement: true
     },
 
-    instructor_id: {
-      type: 'integer'
+    instructor: {
+      type: 'integer',
+      model: 'instructor',
+      columnName: 'instructor_id'
     },
 
     subject: {

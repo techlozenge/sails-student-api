@@ -16,15 +16,19 @@ module.exports = {
       autoIncrement: true
     },
 
-    student_id: {
-      type: 'integer'
+    student: {
+      type: 'integer',
+      model: 'student',
+      columnName: 'student_id'
     },
 
-    class_id: {
-      type: 'integer'
+    class: {
+      type: 'integer',
+      model: 'class',
+      columnName: 'class_id'
     }
 
   },
   // tells sails NOT to create a primary key
   autoPK: false
-};  
+};

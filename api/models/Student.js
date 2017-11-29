@@ -48,8 +48,10 @@ module.exports = {
       maxLength: 4
     },
 
-    major_id: {
-      type: 'integer'
+    major: {
+      type: 'integer',
+      model: 'major',
+      columnName: 'major_id'
     }
 
   },

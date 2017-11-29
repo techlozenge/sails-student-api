@@ -16,12 +16,16 @@ module.exports = {
       autoIncrement: true
     },
 
-    class_id: {
-      type: 'integer'
+    class: {
+      type: 'integer',
+      model: 'class',
+      columnName: 'class_id'
     },
 
-    major_id: {
-      type: 'integer'
+    major: {
+      type: 'integer',
+      model: 'major',
+      columnName: 'major_id'
     }
 
   },
