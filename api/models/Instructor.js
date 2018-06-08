@@ -28,8 +28,10 @@ module.exports = {
       maxLength: 30
     },
 
-    major_id: {
-      type: 'integer'
+    major: {
+      type: 'integer',
+      model: 'major',
+      columnName: 'major_id'
     },
 
     years_of_experience: {

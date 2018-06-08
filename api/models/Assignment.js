@@ -1,5 +1,8 @@
 /**
  * Assignment.js
+ * 
+ * 1/29/2018: Updated this to handle Student and Class so those values would be inserted
+ * into the JSON so they could be used by the Angular Assignment frontend 
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -15,8 +18,10 @@ module.exports = {
       autoIncrement: true
     },
 
-    student_id: {
+    student: {
       type: 'integer',
+      model: 'student',
+      columnName: 'student_id'
     },
 
     assignment_nbr: {
@@ -29,8 +34,10 @@ module.exports = {
       columnName: 'grade_id'
     },
 
-    class_id: {
+    class: {
       type: 'integer',
+      model: 'class',
+      columnName: 'class_id'
     }
 
   },
